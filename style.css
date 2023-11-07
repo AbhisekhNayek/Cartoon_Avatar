@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #6bddab;
+}
+.container {
+  background-color: #ffffff;
+  width: min(90%, 28em);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  padding: 3.12em 1.87em;
+  border-radius: 0.5em;
+  box-shadow: 0 1.25em 2.18em rgba(2, 44, 26, 0.2);
+}
+input[type="file"] {
+  display: none;
+}
+label {
+  display: block;
+  position: relative;
+  background-color: #2cd28a;
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.12em;
+  width: 16em;
+  margin: auto;
+  cursor: pointer;
+  border-radius: 0.3em;
+  padding: 1em 0;
+}
+#post-upload-container {
+  width: min(50em, 90%);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  background-color: #ffffff;
+  padding: 3em 2em;
+  border-radius: 0.8em;
+  box-shadow: 0 2em 4em rgba(2, 44, 25, 0.2);
+}
+.image-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+img,
+canvas {
+  width: 100%;
+}
+.btns {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 2em;
+}
+.btns button,
+.btns a {
+  padding: 1em 2em;
+  border: 3px solid #2cd28a;
+  font-size: 1em;
+  border-radius: 0.5em;
+}
+.btns button {
+  background-color: #ffffff;
+  color: #2cd28a;
+}
+.btns a {
+  text-decoration: none;
+  background-color: #2cd28a;
+  color: #ffffff;
+}
+.hide {
+  display: none;
+}
